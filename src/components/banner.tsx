@@ -7,7 +7,7 @@ const Banner = (): ReactElement => {
       bgRepeat="no-repeat"
       bgSize="cover"
       w="100%"
-      h="360"
+      h="400px"
       justify="space-between"
       align="center"
     >
@@ -21,7 +21,7 @@ const Banner = (): ReactElement => {
         </Text>
       </Flex>
       <Image
-        transform={"rotate(3deg)translateY(48px)"}
+        transform={"rotate(3deg)translateY(78px)"}
         w="430px"
         src="Airplane.png"
         alt="Avião voando sob as nuvens"

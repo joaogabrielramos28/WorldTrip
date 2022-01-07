@@ -4,6 +4,7 @@ import Divider from "../components/divider";
 import Header from "../components/header";
 import TravelTypes from "../components/travelTypes/index";
 import { Heading } from "@chakra-ui/react";
+import Carousel from "../components/carousel";
 const Home: NextPage = () => {
   return (
     <>
@@ -21,6 +22,7 @@ const Home: NextPage = () => {
         Vamos nessa? <br />
         Então escolha seu continente
       </Heading>
+      <Carousel />
     </>
   );
 };
