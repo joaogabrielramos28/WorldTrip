@@ -4,7 +4,6 @@ import { MdOutlineArrowBackIos } from "react-icons/md";
 import { useRouter } from "next/router";
 import Link from "next/link";
 const Header = (): ReactElement => {
-  const [isMobile] = useMediaQuery("(max-width: 400px)");
   const { pathname } = useRouter();
 
   if (pathname === "/") {

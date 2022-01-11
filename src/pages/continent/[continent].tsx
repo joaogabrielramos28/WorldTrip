@@ -1,4 +1,12 @@
-import { Box, Heading, Flex, Text, Grid, SimpleGrid } from "@chakra-ui/react";
+import {
+  Box,
+  Heading,
+  Flex,
+  Text,
+  Grid,
+  SimpleGrid,
+  useMediaQuery,
+} from "@chakra-ui/react";
 import { GetStaticPaths, GetStaticProps } from "next";
 import { Continents } from "../../services/api.js";
 import CardCity from "../../components/cardCity";
@@ -70,7 +78,7 @@ const Continent = ({ exactContinent }: ContinentProps) => {
           <Flex flex="1" justify="center">
             <ContinentInfo number={countryCount} title={"países"} />
             <ContinentInfo number={languages} title={"línguas"} />
-            <ContinentInfo number={cities100} title={"cidade +100"} />
+            <ContinentInfo number={cities100} title={"cidade +100"} tooltip />
           </Flex>
         </Grid>
 
@@ -78,12 +86,7 @@ const Continent = ({ exactContinent }: ContinentProps) => {
           <Text color="gray.700" fontSize={["2xl", "5xl"]} lineHeight="54px">
             Cidades +100
           </Text>
-          <SimpleGrid
-            my={[10, 20]}
-            minChildWidth={"260px"}
-            maxColumns={[1, 6]}
-            spacing={10}
-          >
+          <SimpleGrid my={[10, 20]} minChildWidth={"260px"} spacing={10}>
             {cities.map((city) => (
               <CardCity
                 key={city.capital}
