@@ -9,9 +9,10 @@ const CardCity = ({ country, capital, flag, banner }: CardCityProps) => {
   return (
     <Flex flexDirection={"column"} maxWidth="300px">
       <Image
-        src={`/${banner}`}
+        src={`${banner}`}
         borderRadius={"4px 4px 0 6px"}
         alt={`${country} image`}
+        height={"200px"}
       />
       <Flex
         align="center"
@@ -23,7 +24,7 @@ const CardCity = ({ country, capital, flag, banner }: CardCityProps) => {
           <Text color="gray.700">{capital}</Text>
           <Text color="gray.300">{country}</Text>
         </Flex>
-        <Avatar src={`/${flag}`} w={30} h={30} />
+        <Avatar src={`${flag}`} w={30} h={30} />
       </Flex>
     </Flex>
   );
