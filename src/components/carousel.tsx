@@ -1,7 +1,7 @@
 import { ReactElement } from "react";
 import { Flex, Heading, Image, Text } from "@chakra-ui/react";
 import { Swiper, SwiperSlide } from "swiper/react";
-
+import Link from "next/link";
 // Import Swiper styles
 // Navigation module
 // import Swiper core and required modules
@@ -28,159 +28,174 @@ const Carousel = (): ReactElement => {
           className="mySwiper"
         >
           <SwiperSlide>
-            <Flex
-              flexDirection="column"
-              w="100%"
-              h="100%"
-              objectFit={"cover"}
-              align="center"
-              justify="center"
-              bgImage="europe.png"
-              bgRepeat="no-repeat"
-              bgSize="cover"
-            >
-              <Heading
-                color="gray.50"
-                fontSize="6xl"
-                fontWeight="bold"
-                lineHeight="72px"
+            <Link href="/continent/europa" passHref>
+              <Flex
+                flexDirection="column"
+                w="100%"
+                h="100%"
+                objectFit={"cover"}
+                align="center"
+                justify="center"
+                bgImage="europe.png"
+                bgRepeat="no-repeat"
+                bgSize="cover"
+                cursor="pointer"
               >
-                Europa
-              </Heading>
-              <Text
-                color="gray.100"
-                fontSize="2xl"
-                fontWeight="bold"
-                lineHeight="36px"
-              >
-                O continente mais antigo.
-              </Text>
-            </Flex>
+                <Heading
+                  color="gray.50"
+                  fontSize="6xl"
+                  fontWeight="bold"
+                  lineHeight="72px"
+                >
+                  Europa
+                </Heading>
+                <Text
+                  color="gray.100"
+                  fontSize="2xl"
+                  fontWeight="bold"
+                  lineHeight="36px"
+                >
+                  O continente mais antigo.
+                </Text>
+              </Flex>
+            </Link>
           </SwiperSlide>
           <SwiperSlide>
-            <Flex
-              flexDirection="column"
-              w="100%"
-              h="100%"
-              bgPosition="100% 30%"
-              objectFit={"cover"}
-              align="center"
-              justify="center"
-              bgImage="southAmerica.jpg"
-              bgRepeat="no-repeat"
-              bgSize="cover"
-            >
-              <Heading
-                color="gray.50"
-                fontSize="6xl"
-                fontWeight="bold"
-                lineHeight="72px"
+            <Link href="/continent/south-america" passHref>
+              <Flex
+                flexDirection="column"
+                w="100%"
+                h="100%"
+                bgPosition="100% 30%"
+                objectFit={"cover"}
+                align="center"
+                justify="center"
+                bgImage="southAmerica.jpg"
+                bgRepeat="no-repeat"
+                bgSize="cover"
+                cursor="pointer"
               >
-                América do sul
-              </Heading>
-              <Text
-                color="gray.100"
-                fontSize="2xl"
-                fontWeight="bold"
-                lineHeight="36px"
-              >
-                Continente com clima tropical e Grande biodiversidade.
-              </Text>
-            </Flex>
+                <Heading
+                  color="gray.50"
+                  fontSize="6xl"
+                  fontWeight="bold"
+                  lineHeight="72px"
+                >
+                  América do sul
+                </Heading>
+                <Text
+                  color="gray.100"
+                  fontSize="2xl"
+                  fontWeight="bold"
+                  lineHeight="36px"
+                >
+                  Continente com clima tropical e Grande biodiversidade.
+                </Text>
+              </Flex>
+            </Link>
           </SwiperSlide>
           <SwiperSlide>
-            <Flex
-              flexDirection="column"
-              w="100%"
-              h="100%"
-              bgPosition="100% 30%"
-              objectFit={"cover"}
-              align="center"
-              justify="center"
-              bgImage="northAmerica.jpg"
-              bgRepeat="no-repeat"
-              bgSize="cover"
-            >
-              <Heading
-                color="gray.50"
-                fontSize="6xl"
-                fontWeight="bold"
-                lineHeight="72px"
+            <Link href="/continent/north-america" passHref>
+              <Flex
+                flexDirection="column"
+                w="100%"
+                h="100%"
+                bgPosition="100% 30%"
+                objectFit={"cover"}
+                align="center"
+                justify="center"
+                bgImage="northAmerica.jpg"
+                bgRepeat="no-repeat"
+                bgSize="cover"
+                cursor="pointer"
               >
-                América do norte
-              </Heading>
-              <Text
-                color="gray.100"
-                fontSize="2xl"
-                fontWeight="bold"
-                lineHeight="36px"
-              >
-                O segundo maior continente do mundo.
-              </Text>
-            </Flex>
+                <Heading
+                  color="gray.50"
+                  fontSize="6xl"
+                  fontWeight="bold"
+                  lineHeight="72px"
+                >
+                  América do norte
+                </Heading>
+                <Text
+                  color="gray.100"
+                  fontSize="2xl"
+                  fontWeight="bold"
+                  lineHeight="36px"
+                >
+                  O segundo maior continente do mundo.
+                </Text>
+              </Flex>
+            </Link>
           </SwiperSlide>
           <SwiperSlide>
-            <Flex
-              flexDirection="column"
-              w="100%"
-              h="100%"
-              bgPosition="100% 30%"
-              objectFit={"cover"}
-              align="center"
-              justify="center"
-              bgImage="africa.jpg"
-              bgRepeat="no-repeat"
-              backgroundPosition={"bottom center"}
-              bgSize="cover"
-            >
-              <Heading
-                color="gray.50"
-                fontSize="6xl"
-                fontWeight="bold"
-                lineHeight="72px"
+            <Link href="/continent/africa" passHref>
+              <Flex
+                flexDirection="column"
+                w="100%"
+                h="100%"
+                bgPosition="100% 30%"
+                objectFit={"cover"}
+                align="center"
+                justify="center"
+                bgImage="africa.jpg"
+                bgRepeat="no-repeat"
+                backgroundPosition={"bottom center"}
+                bgSize="cover"
+                cursor="pointer"
               >
-                África
-              </Heading>
-              <Text
-                color="gray.100"
-                fontSize="2xl"
-                fontWeight="bold"
-                lineHeight="36px"
-              >
-                Onde se localiza o deserto de Saara.
-              </Text>
-            </Flex>
+                <Heading
+                  color="gray.50"
+                  fontSize="6xl"
+                  fontWeight="bold"
+                  lineHeight="72px"
+                >
+                  África
+                </Heading>
+                <Text
+                  color="gray.100"
+                  fontSize="2xl"
+                  fontWeight="bold"
+                  lineHeight="36px"
+                >
+                  Onde se localiza o deserto de Saara.
+                </Text>
+              </Flex>
+            </Link>
           </SwiperSlide>
           <SwiperSlide>
-            <Flex
-              flexDirection="column"
-              w="100%"
-              h="100%"
-              bgPosition="100% 30%"
-              objectFit={"cover"}
-              align="center"
-              justify="center"
-              bgImage="asia.jpg"
-              bgRepeat="no-repeat"
-              bgSize="cover"
-            >
-              <Heading
-                color="gray.50"
-                fontSize="6xl"
-                fontWeight="bold"
-                lineHeight="72px"
+            <Link href="/continent/asia" passHref>
+              <Flex
+                flexDirection="column"
+                w="100%"
+                h="100%"
+                bgPosition="100% 30%"
+                objectFit={"cover"}
+                align="center"
+                justify="center"
+                bgImage="asia.jpg"
+                bgRepeat="no-repeat"
+                bgSize="cover"
+                cursor="pointer"
               >
-                Ásia
-              </Heading>
-              <Text
-                color="gray.100"
-                fontSize="2xl"
-                fontWeight="bold"
-                lineHeight="36px"
-              >
-                O continente mais populoso.
-              </Text>
-            </Flex>
+                <Heading
+                  color="gray.50"
+                  fontSize="6xl"
+                  fontWeight="bold"
+                  lineHeight="72px"
+                >
+                  Ásia
+                </Heading>
+                <Text
+                  color="gray.100"
+                  fontSize="2xl"
+                  fontWeight="bold"
+                  lineHeight="36px"
+                >
+                  O continente mais populoso.
+                </Text>
+              </Flex>
+            </Link>
           </SwiperSlide>
         </Swiper>
       </Flex>
