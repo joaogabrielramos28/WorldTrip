@@ -40,7 +40,7 @@ const Continent = ({ exactContinent }: ContinentProps) => {
         <Flex
           w="100%"
           objectFit="cover"
-          height="700px"
+          height={["450px", "700px"]}
           backgroundImage={banner}
           backgroundSize="cover"
           bgRepeat="no-repeat"
@@ -52,10 +52,15 @@ const Continent = ({ exactContinent }: ContinentProps) => {
           </Heading>
         </Flex>
 
-        <Grid w="100%" p={"28"} templateColumns={"1.2fr 1fr"} gap={20}>
+        <Grid
+          w="100%"
+          p={["2", "28"]}
+          templateColumns={["1fr", "1.2fr 1fr"]}
+          gap={10}
+        >
           <Text
             w="1fr"
-            fontSize="xl"
+            fontSize={["sm", "xl"]}
             textAlign="justify"
             lineHeight={"36px"}
             color={"gray.700"}
@@ -69,15 +74,14 @@ const Continent = ({ exactContinent }: ContinentProps) => {
           </Flex>
         </Grid>
 
-        <Box p={24} w={"100%"}>
-          <Text color="gray.700" fontSize={"5xl"} lineHeight="54px">
+        <Box p={[10, 24]} w={"100%"} my={["10", 0]} mx="auto">
+          <Text color="gray.700" fontSize={["2xl", "5xl"]} lineHeight="54px">
             Cidades +100
           </Text>
           <SimpleGrid
-            my={20}
-            minChildWidth="260px"
-            maxColumns={6}
-            minColumn={3}
+            my={[10, 20]}
+            minChildWidth={"260px"}
+            maxColumns={[1, 6]}
             spacing={10}
           >
             {cities.map((city) => (
