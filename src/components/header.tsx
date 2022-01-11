@@ -1,9 +1,10 @@
 import { ReactElement } from "react";
-import { Box, Flex, Icon, Image } from "@chakra-ui/react";
+import { Box, Flex, Icon, Image, useMediaQuery } from "@chakra-ui/react";
 import { MdOutlineArrowBackIos } from "react-icons/md";
 import { useRouter } from "next/router";
 import Link from "next/link";
 const Header = (): ReactElement => {
+  const [isMobile] = useMediaQuery("(max-width: 400px)");
   const { pathname } = useRouter();
 
   if (pathname === "/") {

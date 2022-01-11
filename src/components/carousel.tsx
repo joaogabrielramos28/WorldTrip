@@ -19,7 +19,7 @@ SwiperCore.use([Navigation, Pagination, Mousewheel, Keyboard]);
 const Carousel = (): ReactElement => {
   return (
     <>
-      <Flex w="100%" mx="auto" h="850px" px="36" py="20">
+      <Flex w="100%" mx="auto" h={["450px", "850px"]} px={[0, "36"]} py="20">
         <Swiper
           cssMode={true}
           navigation={true}
@@ -45,7 +45,7 @@ const Carousel = (): ReactElement => {
                 >
                   <Heading
                     color="gray.50"
-                    fontSize="6xl"
+                    fontSize={["4xl", "6xl"]}
                     fontWeight="bold"
                     lineHeight="72px"
                   >
@@ -53,7 +53,8 @@ const Carousel = (): ReactElement => {
                   </Heading>
                   <Text
                     color="gray.100"
-                    fontSize="2xl"
+                    fontSize={["xl", "2xl"]}
+                    textAlign="center"
                     fontWeight="bold"
                     lineHeight="36px"
                   >
